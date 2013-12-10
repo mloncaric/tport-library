@@ -1,0 +1,8 @@
+{
+	"name": "tport-library",
+	"description": "Teleport Library",
+	"homepage": "https://github.com/mloncaric/tport-library.git",
+	"author": "Miran Loncaric",
+	"version": "0.1.0",
+	"git": "https://github.com/mloncaric/tport-library.git"
+}

@@ -1,0 +1,7 @@
+<template name="users">
+	<div id="users">
+		<div class="heading"><i class="icon-user"></i> Users</div>
+		
+		<p>{{#listUsers users}}{{name}}{{#if ping}}<span class="ping">({{ping}} ms)</span>{{/if}}{{/listUsers}}</p>
+	</div>
+</template>
