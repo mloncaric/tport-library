@@ -1,0 +1,15 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "tport-library": {
+        "path": "."
+      }
+    },
+    "packages": {
+      "tport-library": {
+        "path": "."
+      }
+    }
+  }
+}
