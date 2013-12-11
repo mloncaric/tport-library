@@ -3,7 +3,7 @@
 	"description": "Teleport Library (private atm)",
 	"homepage": "https://github.com/mloncaric/tport-library.git",
 	"author": "Miran Loncaric",
-	"version": "0.1.7",
+	"version": "0.1.8",
 	"git": "https://github.com/mloncaric/tport-library.git",
 	"packages": {
 		"router": "0.5.4.1",
