@@ -1,3 +1,13 @@
+Template.login.helpers({appName: function()
+{
+	var value = Meteor.settings.public.applicationName;
+	
+	if(value)
+		return " " + value;
+	
+	return "";
+}});
+
 loginState = new State("login");
 
 loginState.skip = function()
