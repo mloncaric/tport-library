@@ -3,7 +3,7 @@ Template.login.helpers({appName: function()
 	var value = Meteor.settings.public.applicationName;
 	
 	if(value)
-		return " " + value;
+		return value;
 	
 	return "";
 }});

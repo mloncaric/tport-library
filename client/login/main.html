@@ -7,9 +7,9 @@
 				{{#unless loginRequired}}
 				<h3 id="myModalLabel">Teleport Now</h3>
 				{{#if accessKey}}
-				<p>Join the{{appName}} session: {{accessKey}}</p>
+				<p>Join{{#if appName}} the {{appName}}{{/if}} session: {{accessKey}}</p>
 				{{else}}
-				<p>Start new{{appName}} session</p>
+				<p>Start new{{#if appName}} {{appName}}{{/if}} session</p>
 				{{/if}}
 				{{else}}
 				<h3 id="myModalLabel">Login required</h3>
@@ -29,9 +29,9 @@
 						<p>Your name: <input id="guestName" type="text" value="Guest"/></p>
 						
 						{{#if accessKey}}
-						<button type="submit" class="btn btn-primary"><i class="icon-facetime-video"></i> Join App{{appName}}</button>
+						<button type="submit" class="btn btn-primary"><i class="icon-facetime-video"></i> Join app{{#if appName}}: {{appName}}{{/if}}</button>
 						{{else}}
-						<button type="submit" class="btn btn-primary">Start App{{appName}} <i class="icon-arrow-right"></i></button>
+						<button type="submit" class="btn btn-primary">Start app{{#if appName}}: {{appName}}{{/if}} <i class="icon-arrow-right"></i></button>
 						{{/if}}
 					</form>
 					
