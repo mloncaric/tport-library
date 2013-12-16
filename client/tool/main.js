@@ -92,12 +92,12 @@ Deps.autorun(function()
 	if(!appSnapSubscription)
 		return;
 	
-	Teleport.appSnapChangedCallback && Teleport.appSnapChangedCallback(snap);
-	
 	if(!initialized)
 	{
 		Teleport.appSnapInitializedCallback && Teleport.appSnapInitializedCallback(snap);
 		
 		initialized = true;
 	}
+	
+	Teleport.appSnapChangedCallback && Teleport.appSnapChangedCallback(snap);
 });
